@@ -1,10 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Efficient Track Sam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackSAM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0f0f0f;
+            color: #e8e8e8;
+            font-family: 'Georgia', serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: clamp(1.4rem, 3vw, 2rem);
+            font-weight: 700;
+            line-height: 1.4;
+            color: #ffffff;
+            margin-bottom: 12px;
+            letter-spacing: -0.01em;
+        }
+
+        .submission {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 36px;
+            font-style: italic;
+            letter-spacing: 0.03em;
+        }
+
+        .video-wrapper {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        video {
+            width: 100%;
+            display: block;
+            background-color: #000;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to my webpage!</h1>
-    <p>This is hosted on GitHub Pages.</p>
+    <div class="container">
+        <h1>TrackSAM: Accelerating the Segment Anything Model via Token Merging for Efficient Segmentation and Tracking</h1>
+        <p class="submission">IJCAI Demo Submission #158</p>
+        <div class="video-wrapper">
+            <video controls>
+                <source src="assets/Presentation1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
 </body>
 </html>
